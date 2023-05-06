@@ -16,7 +16,7 @@ std::mt19937_64 mt{
                 static_cast<unsigned int>(std::chrono::high_resolution_clock::now().time_since_epoch().count()) //Choose to use std::chrono::high_resolution_clock instead of std::chrono::steady_clock.
                };
 
-// Create a reusable random number generator that generates uniform numbers between 1 and 6
+// Create a reusable random number generator that generates uniform numbers between 1 and #
 std::uniform_int_distribution<> tmp{ 1, 100 }; //	std::uniform_int_distribution #{ 1, # }; // for C++14, use std::uniform_int_distribution<> #{ 1, # };
 
 // Print a bunch of random numbers
